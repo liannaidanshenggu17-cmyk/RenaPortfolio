@@ -280,3 +280,20 @@ header p {
     background: #333;
     color: white !important;
 }
+.work-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.work-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #333;
+    margin-top: 20px;
+    color: #333;
+}
+
+.work-button:hover {
+    background: #333;
+    color: white;
+}
