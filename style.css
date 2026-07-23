@@ -31,12 +31,12 @@ header p {
 /* hero */
 
 .hero {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 60px;
     text-align: center;
-    padding: 80px 20px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
 }
-
 
 .hero h2 {
     font-size: 30px;
