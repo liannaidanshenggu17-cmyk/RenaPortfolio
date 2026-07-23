@@ -180,3 +180,29 @@ header p {
     }
 
 }
+/* 作品詳細ページ */
+
+.work-detail {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+
+.work-detail img {
+    display: block;
+    margin: 0 auto 50px;
+}
+
+
+.work-detail h2 {
+    font-weight: normal;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+
+.work-detail p {
+    color: #555;
+    margin-bottom: 40px;
+}
