@@ -7,6 +7,8 @@ body {
 }
 
 
+/* header */
+
 header {
     text-align: center;
     padding: 70px 20px;
@@ -17,6 +19,7 @@ header h1 {
     font-size: 42px;
     font-weight: normal;
     letter-spacing: 2px;
+    margin: 0;
 }
 
 
@@ -24,6 +27,8 @@ header p {
     color: #777;
 }
 
+
+/* hero */
 
 .hero {
     text-align: center;
@@ -38,6 +43,29 @@ header p {
     font-weight: normal;
 }
 
+
+/* about */
+
+.about {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+.about h2 {
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+.about p {
+    color: #555;
+}
+
+
+/* works */
 
 .works {
     max-width: 900px;
