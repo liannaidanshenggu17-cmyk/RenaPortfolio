@@ -254,3 +254,20 @@ header p {
     background: #333;
     color: white;
 }
+.work-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.work-card a h3 {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #333;
+    font-weight: normal;
+    color: #333;
+}
+
+.work-card a h3:hover {
+    background: #333;
+    color: white;
+}
