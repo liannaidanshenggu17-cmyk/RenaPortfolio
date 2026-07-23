@@ -146,3 +146,37 @@ header p {
     border-radius: 12px;
     margin-bottom: 25px;
 }
+/* スマホ表示 */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+
+    .work-card {
+        padding: 20px;
+    }
+
+
+    .work-card img {
+        width: 100%;
+    }
+
+
+    .contact {
+        padding: 50px 20px;
+    }
+
+}
