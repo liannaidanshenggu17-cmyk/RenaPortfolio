@@ -208,3 +208,28 @@ header p {
     color: #555;
     margin-bottom: 50px;
 }
+/* work1 詳細ページ調整 */
+
+.work-detail {
+    width: 100%;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.work-detail img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 50px;
+}
+
+.work-detail h2 {
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+.work-detail p {
+    margin-bottom: 40px;
+}
