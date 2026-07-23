@@ -42,7 +42,12 @@ header p {
     font-size: 30px;
     font-weight: normal;
 }
-
+.hero p {
+    font-size: 22px;
+    color: #666;
+    margin: 0;
+    text-align: center;
+}
 
 /* about */
 
