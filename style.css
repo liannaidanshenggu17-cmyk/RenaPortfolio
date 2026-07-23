@@ -233,3 +233,24 @@ header p {
 .work-detail p {
     margin-bottom: 40px;
 }
+/* 作品タイトルのリンク */
+
+.work-card a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+.work-card a h3 {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #333;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+
+.work-card a h3:hover {
+    background: #333;
+    color: white;
+}
