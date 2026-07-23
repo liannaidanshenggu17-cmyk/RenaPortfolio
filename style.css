@@ -258,3 +258,25 @@ header p {
     background: #333;
     color: white;
 }
+/* 作品リンクの青色を消す */
+
+.work-card a,
+.work-card a:visited {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+
+.work-card a h3 {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #333;
+    font-weight: normal;
+    color: #333 !important;
+}
+
+
+.work-card a:hover h3 {
+    background: #333;
+    color: white !important;
+}
