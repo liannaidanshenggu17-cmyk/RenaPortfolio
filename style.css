@@ -137,3 +137,12 @@ header p {
     background: #333;
     color: white;
 }
+/* 作品画像 */
+
+.work-card img,
+.work-detail img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
