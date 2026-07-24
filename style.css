@@ -1,3 +1,7 @@
+/* =========================
+   基本設定
+========================= */
+
 body {
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
@@ -7,51 +11,158 @@ body {
 }
 
 
-/* header */
+/* =========================
+   Header
+========================= */
 
 header {
+    position: relative;
     text-align: center;
     padding: 70px 20px;
     border-bottom: 1px solid #eee;
 }
 
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 32px;
+    font-weight: 500;
+    white-space: nowrap;
+}
 
-header h1 {
-    font-size: 42px;
-    font-weight: normal;
-    letter-spacing: 2px;
-    margin: 0;
+.logo:hover {
+    opacity: 0.7;
 }
 
 
-header p {
-    color: #777;
-}
-
-
-/* hero */
+/* =========================
+   Hero
+========================= */
 
 .hero {
-    width: 100%;
     max-width: 700px;
     margin: 80px auto;
     padding: 0 40px;
     text-align: center;
-    box-sizing: border-box;
 }
 
-.hero h2 {
-    font-size: 30px;
-    font-weight: normal;
-}
 .hero p {
     font-size: 22px;
     color: #666;
     margin: 0;
-    text-align: center;
 }
 
-/* about */
+
+/* =========================
+   Works
+========================= */
+
+.works {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.works h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+.work-card {
+    border: 1px solid #eee;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+.work-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+
+.work-card img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+
+.work-card p {
+    color: #555;
+}
+
+
+/* 作品ボタン */
+
+.work-link {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.work-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    color: #333;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.work-button:hover {
+    background: #e6e6e6;
+}
+
+
+/* =========================
+   Coming Soon
+========================= */
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 380px;
+
+    background: #f5f5f5;
+    border: 1px dashed #ccc;
+}
+
+
+.coming-soon h3 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+
+.coming-soon p {
+    color: #777;
+}
+
+
+/* =========================
+   About
+========================= */
 
 .about {
     max-width: 700px;
@@ -63,7 +174,6 @@ header p {
 
 .about h2 {
     font-weight: normal;
-    margin-bottom: 30px;
 }
 
 
@@ -72,41 +182,9 @@ header p {
 }
 
 
-/* works */
-
-.works {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-
-.works h2 {
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 50px;
-}
-
-
-.work-card {
-    border: 1px solid #eee;
-    padding: 30px;
-    text-align: center;
-}
-
-
-
-
-.work-card h3 {
-    font-weight: normal;
-    margin-top: 30px;
-}
-
-
-.work-card p {
-    color: #555;
-}
-/* contact */
+/* =========================
+   Contact
+========================= */
 
 .contact {
     text-align: center;
@@ -116,570 +194,333 @@ header p {
 
 .contact h2 {
     font-weight: normal;
-    margin-bottom: 30px;
 }
 
 
 .contact p {
     color: #555;
-    margin-bottom: 30px;
 }
 
 
 .button {
     display: inline-block;
+
     padding: 12px 35px;
+
     border: 1px solid #333;
     border-radius: 8px;
+
     color: #333;
     text-decoration: none;
+
     transition: 0.3s;
 }
-
 
 
 .button:hover {
     background: #333;
     color: white;
 }
-/* 作品画像 */
-
-/* 作品画像 */
-
-.work-card img,
-.work-detail img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-}
-/* スマホ表示 */
-
-@media screen and (max-width: 600px) {
-
-    header h1 {
-        font-size: 32px;
-    }
 
 
-    .hero {
-        padding: 50px 20px;
-    }
-
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-
-    .work-card {
-        padding: 20px;
-    }
-
-
-    .work-card img {
-        width: 100%;
-    }
-max-width: 350px;
-    height: auto;
-    margin: 0 auto;
-}
-
-    .contact {
-        padding: 50px 20px;
-    }
-
-}
-/* 作品詳細ページ */
+/* =========================
+   詳細ページ
+========================= */
 
 .work-detail {
-    max-width: 700px;
-    margin: 80px auto;
-    padding: 0 60px;
-}
-
-
-.work-detail img {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 50px;
-}
-
-
-.work-detail h2 {
-    font-weight: normal;
-    margin-top: 70px;
-    margin-bottom: 30px;
-}
-
-
-.work-detail p {
-    color: #555;
-    margin-bottom: 50px;
-}
-/* work1 詳細ページ調整 */
-
-.work-detail {
-    width: 100%;
     max-width: 700px;
     margin: 80px auto;
     padding: 0 60px;
     box-sizing: border-box;
 }
 
+
 .work-detail img {
     display: block;
+
     width: 100%;
     max-width: 400px;
+
     margin: 0 auto 50px;
+    border-radius: 12px;
 }
+
 
 .work-detail h2 {
     margin-top: 70px;
     margin-bottom: 25px;
+    font-weight: normal;
 }
+
 
 .work-detail p {
+    color: #555;
     margin-bottom: 40px;
 }
-/* 作品タイトルのリンク */
-
-/* 作品リンクをボタン化 */
-
-.work-card a {
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-}
 
 
-.work-card a h3 {
-    display: inline-block;
-    padding: 12px 25px;
-    border: 1px solid #333;
-    font-weight: normal;
-    margin: 20px 0 0;
-    color: #333;
-}
-
-
-.work-card a:hover h3 {
-    background: #333;
-    color: white;
-}
-/* 作品リンクの青色を消す */
-
-.work-card a,
-.work-card a:visited {
-    color: #333 !important;
-    text-decoration: none !important;
-}
-
-
-.work-card a h3 {
-    display: inline-block;
-    padding: 12px 25px;
-    border: 1px solid #333;
-    font-weight: normal;
-    color: #333 !important;
-}
-
-
-.work-card a:hover h3 {
-    background: #333;
-    color: white !important;
-}
-.work-link {
-    text-decoration: none;
-    color: #333;
-}
-
-.work-button {
-    display: inline-block;
-    padding: 12px 25px;
-    margin-top: 20px;
-
-    background: #f5f5f5;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-
-    font-weight: 500;
-    color: #333;
-    transition: 0.3s;
-}
-
-.work-button:hover {
-    background: #e6e6e6;
-    border-color: #cfcfcf;
-}
-/* Worksを2列表示 */
-
-.works {
-    max-width: 1000px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-.works {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.works h2 {
-    grid-column: 1 / -1;
-}
-/* Coming Soon */
-
-.coming-soon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 380px;
-background: #f5f5f5;
-    border: 1px dashed #ccc;
-}
-
-.coming-soon h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.coming-soon p {
-    color: #777;
-}
-/* フェードイン */
-
-.hero,
-.work-card,
-.contact,
-footer {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 0.8s ease forwards;
-}
-
-.hero {
-    animation-delay: 0.1s;
-}
-
-.work-card:nth-child(2) {
-    animation-delay: 0.3s;
-}
-
-.work-card:nth-child(3) {
-    animation-delay: 0.5s;
-}
-
-.contact {
-    animation-delay: 0.7s;
-}
+/* =========================
+   Footer
+========================= */
 
 footer {
     text-align: center;
     color: #888;
+
     font-size: 14px;
+
     padding: 40px 0;
+
     border-top: 1px solid #eee;
-    margin-top: 80px;
 }
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* カードのホバーアニメーション */
-
-.work-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.work-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-.search {
-    text-align: center;
-    margin: 60px 0;
-}
-
-.search input {
-    padding: 12px;
-    width: 250px;
-    border: 1px solid #ccc;
-}
-
-.search button {
-    padding: 12px 20px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-header {
-    position: relative;
-}
+/* =========================
+   Search
+========================= */
 
 .search {
     position: absolute;
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
-    align-items: center;
 }
 
 .search input {
-    width: 150px;
-    padding: 10px 15px;
+    width: 220px;
+
+    padding: 12px 18px;
+
     border: 1px solid #ddd;
     border-radius: 30px;
+
     outline: none;
+
     font-size: 14px;
 }
 
-.search button {
-    margin-left: -40px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-header {
-    position: relative;
-}
 
-.search {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-}
+/* =========================
+   検索結果
+========================= */
 
-.search input[type="text"] {
-    width: 140px;
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    outline: none;
-}
-
-.search button {
-    margin-left: -40px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
 #searchResults {
     max-width: 600px;
     margin: 40px auto;
 }
 
+
 .result-card {
+
     background: white;
+
     border: 1px solid #ddd;
     border-radius: 20px;
+
     padding: 25px;
+
     text-align: center;
+
     margin-bottom: 20px;
 }
 
-.result-card h3 {
-    margin-top: 0;
-}
 
 .result-card a {
+
     display: inline-block;
+
     margin-top: 15px;
+
     padding: 12px 30px;
+
     border: 1px solid #333;
     border-radius: 30px;
+
     color: #333;
+
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.result-card a:hover {
-    opacity: 0.7;
-}
-.logo {
-    text-decoration: none;
-    color: #333;
-    font-size: 32px;
-    font-weight: 500;
+
+/* =========================
+   フェード表示
+========================= */
+
+.hero,
+.work-card,
+.contact,
+footer {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    animation: fadeUp 0.8s ease forwards;
 }
 
-.logo:hover {
-    opacity: 0.7;
+
+.hero {
+    animation-delay: 0.1s;
 }
+
+
+.work-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+
+.work-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+
+.contact {
+    animation-delay: 0.7s;
+}
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================
+   スマホ表示
+========================= */
+
 @media screen and (max-width:600px) {
 
-    .work-card {
-        padding: 15px;
-    }
 
-    .work-card p {
-        margin: 10px 0;
-        line-height: 1.6;
-    }
-
-}
-
-    /* ヘッダー */
     header {
-        text-align: center;
-        padding: 25px 15px;
+
+        padding: 30px 15px;
+
     }
+
 
     .logo {
-        font-size: 24px;
-        display: block;
-        margin-bottom: 20px;
+
+        font-size: 18px;
+
+        white-space: nowrap;
+
     }
 
-    /* 検索欄 */
+
+
+    /* 検索バー */
+
     .search {
+
         position: static;
+
         transform: none;
-        justify-content: center;
+
+        margin-top: 20px;
+
     }
+
 
     .search input {
-        width: 80%;
-        max-width: 250px;
+
+        width: 260px;
+
+        max-width: 90%;
+
     }
 
 
-    /* 各セクション */
-    .hero,
-    .works,
-    .about,
-    .contact {
-        padding: 30px 20px;
-    }
 
-
-    /* 作品カード */
-    .work-card {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-
-    /* 画像 */
-    .work-card img {
-        max-width: 100%;
-        height: auto;
-    }
-
-
-    /* 検索結果 */
-    #searchResults {
-        width: calc(100% - 40px);
-        margin: 30px auto;
-    }
-
-    .result-card {
-        padding: 20px 15px;
-    }
-
-}
-.logo {
-    text-decoration: none;
-    color: #333;
-    font-size: 32px;
-    white-space: nowrap;
-}
-@media screen and (max-width: 600px) {
-
-    .logo {
-        font-size: 18px;
-        white-space: nowrap;
-    }
-
-}
-@media screen and (max-width: 600px) {
-
-    .work-card img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-}
-@media screen and (max-width:600px) {
+    /* Works */
 
     .works {
+
         display: block;
+
+        padding: 0 15px;
+
     }
 
-}
-@media screen and (max-width: 600px) {
-
-    .works {
-        display: block;
-    }
 
     .work-card {
+
         width: 100%;
+
         padding: 15px;
+
+        margin-bottom: 25px;
+
         box-sizing: border-box;
+
     }
+
+
+
+    .work-card img {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
 
     .work-card p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
         margin: 8px 0;
-        line-height: 1.5;
+
     }
+
+
 
     .work-button {
-        margin-top: 10px;
+
         padding: 10px 15px;
+
+        margin-top: 10px;
+
     }
 
-}
-@media screen and (max-width: 600px) {
 
-    .works {
-        display: block !important;
-        width: 100% !important;
-        padding: 0 15px !important;
-        box-sizing: border-box;
-    }
-
-    .work-card {
-        width: 100% !important;
-        padding: 15px !important;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-    }
-
-    .work-card p {
-        font-size: 14px;
-        line-height: 1.5;
-        margin: 10px 0;
-    }
-
-}
-@media screen and (max-width: 600px) {
 
     .coming-soon {
+
         min-height: 180px;
+
     }
 
-}
-@media screen and (max-width: 600px) {
 
-    .work-card {
-        padding: 15px;
+
+    .hero,
+    .about,
+    .contact {
+
+        margin: 50px auto;
+
+        padding: 0 20px;
+
     }
+
 
 }
