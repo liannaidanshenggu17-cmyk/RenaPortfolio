@@ -1,18 +1,53 @@
 const searchInput = document.getElementById("searchInput");
-const works = document.querySelectorAll(".work-card");
+const results = document.getElementById("searchResults");
+
+const works = [
+    {
+        name: "またのお越しはお待ちしておりません。",
+        text: "CoC6版 ソロシナリオ 海底郵便局を舞台にした物語作品。",
+        url: "work1.html"
+    }
+];
+
 
 searchInput.addEventListener("input", function() {
 
     const keyword = this.value.toLowerCase();
 
+    results.innerHTML = "";
+
+    if (keyword === "") {
+        return;
+    }
+
+
     works.forEach(work => {
 
-        const name = work.dataset.name.toLowerCase();
+        if (
+            work.name.toLowerCase().includes(keyword) ||
+            work.text.toLowerCase().includes(keyword)
+        ) {
 
-        if (name.includes(keyword)) {
-            work.style.display = "";
-        } else {
-            work.style.display = "none";
+            results.innerHTML += `
+
+            <div class="result-card">
+
+                <h3>
+                    ${work.name}
+                </h3>
+
+                <p>
+                    ${work.text}
+                </p>
+
+                <a href="${work.url}">
+                    詳細を見る
+                </a>
+
+            </div>
+
+            `;
+
         }
 
     });
