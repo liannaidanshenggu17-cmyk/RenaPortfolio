@@ -517,3 +517,64 @@ header {
 .logo:hover {
     opacity: 0.7;
 }
+@media screen and (max-width: 600px) {
+
+    /* ヘッダー */
+    header {
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    /* 検索欄 */
+    .search {
+        position: static;
+        transform: none;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 80%;
+        max-width: 250px;
+    }
+
+
+    /* 各セクション */
+    .hero,
+    .works,
+    .about,
+    .contact {
+        padding: 30px 20px;
+    }
+
+
+    /* 作品カード */
+    .work-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* 画像 */
+    .work-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* 検索結果 */
+    #searchResults {
+        width: calc(100% - 40px);
+        margin: 30px auto;
+    }
+
+    .result-card {
+        padding: 20px 15px;
+    }
+
+}
