@@ -339,3 +339,45 @@ header p {
 .coming-soon p {
     color: #777;
 }
+/* フェードイン */
+
+.hero,
+.work-card,
+.contact,
+footer {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero {
+    animation-delay: 0.1s;
+}
+
+.work-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.work-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.contact {
+    animation-delay: 0.7s;
+}
+
+footer {
+    animation-delay: 0.9s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
