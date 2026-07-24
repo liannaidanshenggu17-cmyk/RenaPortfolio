@@ -320,3 +320,22 @@ header p {
 .works h2 {
     grid-column: 1 / -1;
 }
+/* Coming Soon */
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 380px;
+    background: #fafafa;
+    border: 1px dashed #ccc;
+}
+
+.coming-soon h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.coming-soon p {
+    color: #777;
+}
