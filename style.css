@@ -139,7 +139,7 @@ max-width: 500px;
     text-decoration: none;
     transition: 0.3s;
 }
-}
+
 
 
 .button:hover {
@@ -299,10 +299,11 @@ max-width: 500px;
     padding: 12px 25px;
     margin-top: 20px;
 
-    background: #f3f3f3;      /* 薄い灰色 */
+    background: #f5f5f5;
     border: 1px solid #dddddd;
     border-radius: 8px;
 
+    font-weight: 500;
     color: #333;
     transition: 0.3s;
 }
@@ -335,7 +336,7 @@ max-width: 500px;
     flex-direction: column;
     justify-content: center;
     min-height: 380px;
- background: #f7f7f7;
+background: #f5f5f5;
     border: 1px dashed #ccc;
 }
 
