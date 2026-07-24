@@ -584,3 +584,11 @@ header {
     font-size: 32px;
     white-space: nowrap;
 }
+@media screen and (max-width: 600px) {
+
+    .logo {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+}
