@@ -475,3 +475,35 @@ header {
     background: transparent;
     cursor: pointer;
 }
+#searchResults {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.result-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result-card h3 {
+    margin-top: 0;
+}
+
+.result-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.result-card a:hover {
+    opacity: 0.7;
+}
