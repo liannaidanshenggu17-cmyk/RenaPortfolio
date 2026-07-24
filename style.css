@@ -578,3 +578,6 @@ header {
     }
 
 }
+.logo {
+    white-space: nowrap;
+}
