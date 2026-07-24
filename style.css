@@ -95,10 +95,6 @@ header p {
 }
 
 
-.work-card img {
-    width: 100%;
-max-width: 500px;
-}
 
 
 .work-card h3 {
@@ -148,10 +144,12 @@ max-width: 500px;
 }
 /* 作品画像 */
 
+/* 作品画像 */
+
 .work-card img,
 .work-detail img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 12px;
     margin-bottom: 25px;
 }
