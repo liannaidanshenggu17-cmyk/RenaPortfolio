@@ -3,7 +3,7 @@ const results = document.getElementById("searchResults");
 
 const works = [
     {
-        name: "またのお越しはお待ちしておりません。",
+        name: "「またのお越しはお待ちしておりません」。",
         text: "CoC6版 ソロシナリオ 海底郵便局を舞台にした物語作品。",
         url: "work1.html"
     }
