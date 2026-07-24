@@ -40,9 +40,9 @@ searchInput.addEventListener("input", function() {
                     ${work.text}
                 </p>
 
-                <a href="${work.url}">
-                    詳細を見る
-                </a>
+               <a href="${work.url}">
+    作品ページへ
+</a>
 
             </div>
 
