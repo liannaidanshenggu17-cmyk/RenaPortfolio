@@ -303,3 +303,20 @@ header p {
     background: #333;
     color: white;
 }
+/* Worksを2列表示 */
+
+.works {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.works h2 {
+    grid-column: 1 / -1;
+}
