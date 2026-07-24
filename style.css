@@ -669,3 +669,17 @@ header {
     }
 
 }
+@media screen and (max-width: 600px) {
+
+    .coming-soon {
+        min-height: 180px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+
+    .work-card {
+        padding: 15px;
+    }
+
+}
