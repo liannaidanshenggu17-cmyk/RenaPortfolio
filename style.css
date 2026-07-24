@@ -507,3 +507,13 @@ header {
 .result-card a:hover {
     opacity: 0.7;
 }
+.logo {
+    text-decoration: none;
+    color: #333;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
