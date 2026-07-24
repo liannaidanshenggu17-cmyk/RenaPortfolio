@@ -403,3 +403,19 @@ footer {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+.search {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.search input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+.search button {
+    padding: 12px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
