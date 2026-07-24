@@ -12,6 +12,7 @@ body {
 header {
     text-align: center;
     padding: 70px 20px;
+    border-bottom: 1px solid #eee;
 }
 
 
@@ -96,7 +97,7 @@ header p {
 
 .work-card img {
     width: 100%;
-    max-width: 400px;
+max-width: 500px;
 }
 
 
@@ -133,9 +134,11 @@ header p {
     display: inline-block;
     padding: 12px 35px;
     border: 1px solid #333;
+    border-radius: 8px;
     color: #333;
     text-decoration: none;
     transition: 0.3s;
+}
 }
 
 
@@ -292,11 +295,7 @@ header p {
 }
 
 .work-button {
-    display: inline-block;
-    padding: 12px 25px;
-    border: 1px solid #333;
-    margin-top: 20px;
-    color: #333;
+    border-radius: 8px;
 }
 
 .work-button:hover {
@@ -367,7 +366,12 @@ footer {
 }
 
 footer {
-    animation-delay: 0.9s;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    margin-top: 80px;
 }
 
 @keyframes fadeUp {
